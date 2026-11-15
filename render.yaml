@@ -1,0 +1,14 @@
+# Render Blueprint: New + > Blueprint, point at your GitHub repo.
+services:
+  - type: web
+    name: retailiq-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: RETAILIQ_ROOT
+        value: /app
+      - key: RETAILIQ_API_KEY
+        sync: false          # set it in the Render dashboard to protect the API
+      - key: RETAILIQ_LOG_LEVEL
+        value: INFO

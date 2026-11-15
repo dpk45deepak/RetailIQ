@@ -1,0 +1,12 @@
+# Everything for local learning/development: notebooks, SHAP explainability, MLflow tracking, tests.
+-r requirements.txt
+matplotlib>=3.8
+seaborn>=0.13
+shap>=0.45
+mlflow>=2.12
+openpyxl>=3.1          # read the official online_retail_II.xlsx
+pytest>=8.0
+httpx>=0.27            # FastAPI TestClient
+nbformat>=5.9
+nbconvert>=7.16
+ipykernel>=6.29
