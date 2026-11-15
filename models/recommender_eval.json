@@ -1,0 +1,46 @@
+{
+  "split_date": "2011-10-10 00:00:00",
+  "k": 5,
+  "n_eval_customers": 800,
+  "n_train_items": 4618,
+  "actual_purchase_popularity_percentile": 0.7143,
+  "models": {
+    "popularity": {
+      "precision@5": 0.0288,
+      "recall@5": 0.0086,
+      "ndcg@5": 0.0297,
+      "coverage": 0.0093,
+      "avg_popularity_percentile": 0.9992,
+      "top10pct_item_share": 1.0
+    },
+    "collaborative": {
+      "precision@5": 0.0618,
+      "recall@5": 0.0225,
+      "ndcg@5": 0.0654,
+      "coverage": 0.0693,
+      "avg_popularity_percentile": 0.9819,
+      "top10pct_item_share": 0.9675
+    },
+    "content": {
+      "precision@5": 0.0595,
+      "recall@5": 0.0262,
+      "ndcg@5": 0.0686,
+      "coverage": 0.1934,
+      "avg_popularity_percentile": 0.751,
+      "top10pct_item_share": 0.3852
+    },
+    "hybrid": {
+      "precision@5": 0.0663,
+      "recall@5": 0.0275,
+      "ndcg@5": 0.0721,
+      "coverage": 0.1061,
+      "avg_popularity_percentile": 0.9629,
+      "top10pct_item_share": 0.908
+    }
+  },
+  "weights": {
+    "collaborative": 0.6,
+    "content": 0.3,
+    "popularity": 0.1
+  }
+}

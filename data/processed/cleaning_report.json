@@ -1,0 +1,147 @@
+{
+  "before": {
+    "rows": 1067371,
+    "columns": 8,
+    "date_min": "2009-12-01 07:45:00",
+    "date_max": "2011-12-09 12:50:00",
+    "unique_invoices": 53628,
+    "unique_customers": 5942,
+    "unique_products": 5304,
+    "missing_customer_id": 243007,
+    "missing_customer_id_pct": 22.77,
+    "missing_description": 4382,
+    "duplicate_rows": 34335,
+    "cancelled_invoices_rows": 19494,
+    "negative_quantity_rows": 22950,
+    "negative_qty_not_cancellation": 3457,
+    "zero_quantity_rows": 0,
+    "zero_or_negative_price_rows": 6207,
+    "non_product_stock_code_rows": 5830,
+    "max_quantity": 80995,
+    "min_quantity": -80995,
+    "max_unit_price": 38970.0,
+    "missing_by_column": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 4382,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 243007,
+      "Country": 0
+    },
+    "dtypes": {
+      "InvoiceNo": "str",
+      "StockCode": "str",
+      "Description": "str",
+      "Quantity": "float64",
+      "InvoiceDate": "datetime64[us]",
+      "UnitPrice": "float64",
+      "CustomerID": "float64",
+      "Country": "str"
+    }
+  },
+  "after": {
+    "rows": 1021241,
+    "columns": 8,
+    "date_min": "2009-12-01 07:45:00",
+    "date_max": "2011-12-09 12:50:00",
+    "unique_invoices": 46916,
+    "unique_customers": 5875,
+    "unique_products": 4737,
+    "missing_customer_id": 227089,
+    "missing_customer_id_pct": 22.24,
+    "missing_description": 0,
+    "duplicate_rows": 2,
+    "cancelled_invoices_rows": 17912,
+    "negative_quantity_rows": 17912,
+    "negative_qty_not_cancellation": 0,
+    "zero_quantity_rows": 0,
+    "zero_or_negative_price_rows": 0,
+    "non_product_stock_code_rows": 0,
+    "max_quantity": 9456,
+    "min_quantity": -9360,
+    "max_unit_price": 1157.15,
+    "missing_by_column": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 0,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 227089,
+      "Country": 0
+    },
+    "dtypes": {
+      "InvoiceNo": "str",
+      "StockCode": "str",
+      "Description": "str",
+      "Quantity": "float64",
+      "InvoiceDate": "datetime64[us]",
+      "UnitPrice": "float64",
+      "CustomerID": "Int64",
+      "Country": "str"
+    }
+  },
+  "steps": [
+    {
+      "step": "drop unparsable date/quantity/price",
+      "rows_removed": 0,
+      "note": "Rows whose core fields cannot be parsed are unusable."
+    },
+    {
+      "step": "remove exact duplicates",
+      "rows_removed": 34335,
+      "note": "Identical rows are double-entries, not double purchases."
+    },
+    {
+      "step": "remove service stock codes",
+      "rows_removed": 5818,
+      "note": "POST/Discount/Manual/Bank charges are not products."
+    },
+    {
+      "step": "remove zero quantity",
+      "rows_removed": 0,
+      "note": "A line with no units carries no information."
+    },
+    {
+      "step": "remove zero/negative price",
+      "rows_removed": 5964,
+      "note": "Free items and stock adjustments are not sales."
+    },
+    {
+      "step": "remove data-entry outliers",
+      "rows_removed": 13,
+      "note": "|Quantity| >= 10000 or UnitPrice >= 5000; the matching reversal is removed too."
+    },
+    {
+      "step": "remove contradictory cancellations",
+      "rows_removed": 0,
+      "note": "Cancellation invoices with positive quantity."
+    },
+    {
+      "step": "remove unexplained negatives",
+      "rows_removed": 0,
+      "note": "Negative quantity without a cancellation invoice (stock write-offs)."
+    },
+    {
+      "step": "drop products with no description anywhere",
+      "rows_removed": 0,
+      "note": "Cannot be used by the content-based recommender."
+    }
+  ],
+  "summary": {
+    "gross_sales": 19381178.82,
+    "returns_value": -470772.77,
+    "net_revenue": 18910406.05,
+    "return_rate_pct": 2.43,
+    "sale_rows": 1003329,
+    "return_rows": 17912,
+    "guest_row_pct": 22.24,
+    "guest_revenue_pct": 13.58,
+    "flagged_outlier_rows": 1002,
+    "rows_before": 1067371,
+    "rows_after": 1021241
+  },
+  "data_source": "uci_online_retail_ii"
+}

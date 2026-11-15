@@ -1,0 +1,21 @@
+{
+  "data_source": "uci_online_retail_ii",
+  "is_synthetic": false,
+  "snapshot_date": "2011-12-10 00:00:00",
+  "rows_raw": 1067371,
+  "rows_clean": 1021241,
+  "customers": 5852,
+  "n_segments": 4,
+  "silhouette": 0.3587,
+  "selected_model": "XGBoost",
+  "windows": {
+    "train": "2011-03-15 00:00:00",
+    "val": "2011-06-13 00:00:00",
+    "test": "2011-09-11 00:00:00",
+    "end": "2011-12-10 00:00:00",
+    "horizon_days": 90
+  },
+  "built_at": "2026-11-15T02:30:36+00:00",
+  "python": "3.13.18",
+  "seconds": 56.8
+}

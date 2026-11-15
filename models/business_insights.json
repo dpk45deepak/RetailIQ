@@ -1,0 +1,72 @@
+[
+  {
+    "id": "concentration",
+    "kind": "opportunity",
+    "title": "Champions carry the business",
+    "finding": "Champions are 20% of customers but 73% of historical net revenue (\u00a311.93M).",
+    "action": "Reward and recruit: early access, loyalty perks, referral asks. Avoid discounting - they already buy."
+  },
+  {
+    "id": "at_risk",
+    "kind": "risk",
+    "title": "High-value customers are going quiet",
+    "finding": "1,482 at-risk customers spent \u00a32.77M historically (17% of revenue) but have not bought for a median of 176 days.",
+    "action": "Win-back now: personalised outreach, 'we miss you' offer, ask for feedback."
+  },
+  {
+    "id": "seasonality",
+    "kind": "opportunity",
+    "title": "November is the peak month",
+    "finding": "November averages 1.8x the typical month, and October-December bring 35% of annual revenue.",
+    "action": "Build stock and campaign calendars backwards from this peak; launch loyalty perks before September."
+  },
+  {
+    "id": "drivers",
+    "kind": "info",
+    "title": "What predicts a high-value customer",
+    "finding": "The model relies most on: monetary, total items, avg order value. (Ranked by held-out feature importance.)",
+    "action": "Use these signals to build a simple early-warning score for the CRM team."
+  },
+  {
+    "id": "affinity",
+    "kind": "opportunity",
+    "title": "Products that sell together",
+    "finding": "Blue Polkadot Cup and Pink Polkadot Cup appear together in 521 orders (lift 31.8x; 68% of orders with the first also contain the second).",
+    "action": "Bundle them, or show one on the other's product page and basket."
+  },
+  {
+    "id": "returns",
+    "kind": "info",
+    "title": "Returns are worth watching",
+    "finding": "Returns equal 2.4% of gross sales (\u00a3470,773).",
+    "action": "Track return rate by product and customer; investigate any item well above the average."
+  },
+  {
+    "id": "geography",
+    "kind": "opportunity",
+    "title": "Revenue is concentrated in one market",
+    "finding": "United Kingdom generates 85% of net revenue; the next market, EIRE, only 3.2%.",
+    "action": "Test export-focused promotions in the 2-3 largest secondary markets before broad expansion."
+  },
+  {
+    "id": "one_time",
+    "kind": "risk",
+    "title": "Many customers never come back",
+    "finding": "28% of customers have placed exactly one order.",
+    "action": "Add a second-purchase journey: replenishment reminder and affinity-based recommendation within 30 days."
+  },
+  {
+    "id": "reco",
+    "kind": "opportunity",
+    "title": "Personalised recommendations beat best-sellers",
+    "finding": "In a time-aware test the hybrid recommender reached precision@5 0.066 versus 0.029 for a popularity baseline (+130%).",
+    "action": "Use the hybrid list in post-purchase emails and on the basket page; A/B test against best-sellers."
+  },
+  {
+    "id": "guests",
+    "kind": "info",
+    "title": "Some revenue cannot be linked to a customer",
+    "finding": "Guest checkouts without a CustomerID account for 14% of net revenue and are invisible to segmentation and recommendations.",
+    "action": "Prompt guests to create an account at checkout: it improves segmentation and recommendations."
+  }
+]

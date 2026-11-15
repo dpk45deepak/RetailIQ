@@ -1,0 +1,42 @@
+{
+  "rows": 1067371,
+  "columns": 8,
+  "date_min": "2009-12-01 07:45:00",
+  "date_max": "2011-12-09 12:50:00",
+  "unique_invoices": 53628,
+  "unique_customers": 5942,
+  "unique_products": 5304,
+  "missing_customer_id": 243007,
+  "missing_customer_id_pct": 22.77,
+  "missing_description": 4382,
+  "duplicate_rows": 34335,
+  "cancelled_invoices_rows": 19494,
+  "negative_quantity_rows": 22950,
+  "negative_qty_not_cancellation": 3457,
+  "zero_quantity_rows": 0,
+  "zero_or_negative_price_rows": 6207,
+  "non_product_stock_code_rows": 5830,
+  "max_quantity": 80995,
+  "min_quantity": -80995,
+  "max_unit_price": 38970.0,
+  "missing_by_column": {
+    "InvoiceNo": 0,
+    "StockCode": 0,
+    "Description": 4382,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "UnitPrice": 0,
+    "CustomerID": 243007,
+    "Country": 0
+  },
+  "dtypes": {
+    "InvoiceNo": "str",
+    "StockCode": "str",
+    "Description": "str",
+    "Quantity": "float64",
+    "InvoiceDate": "datetime64[us]",
+    "UnitPrice": "float64",
+    "CustomerID": "float64",
+    "Country": "str"
+  }
+}
