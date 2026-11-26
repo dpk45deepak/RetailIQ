@@ -25,9 +25,9 @@
       "precision@5": 0.0595,
       "recall@5": 0.0262,
       "ndcg@5": 0.0686,
-      "coverage": 0.1934,
-      "avg_popularity_percentile": 0.751,
-      "top10pct_item_share": 0.3852
+      "coverage": 0.194,
+      "avg_popularity_percentile": 0.7513,
+      "top10pct_item_share": 0.3855
     },
     "hybrid": {
       "precision@5": 0.0663,

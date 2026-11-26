@@ -8,7 +8,7 @@
 | date_max | 2011-12-09 12:50:00 | 2011-12-09 12:50:00 |
 | unique_invoices | 53628 | 46916 |
 | unique_customers | 5942 | 5875 |
-| unique_products | 5304 | 4737 |
+| unique_products | 5305 | 4737 |
 | missing_customer_id | 243007 | 227089 |
 | missing_customer_id_pct | 22.77 | 22.24 |
 | missing_description | 4382 | 0 |
