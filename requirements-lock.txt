@@ -1,6 +1,6 @@
 # Exact versions the committed models/*.joblib were trained with (Python 3.13).
 # Pickled scikit-learn/XGBoost objects are version-sensitive: if you use other versions, re-run `make pipeline`.
-numpy==2.5.3
+numpy==1.26.4
 pandas==3.0.5
 scipy==1.18.1
 scikit-learn==1.9.1
