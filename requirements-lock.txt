@@ -2,7 +2,7 @@
 # Pickled scikit-learn/XGBoost objects are version-sensitive: if you use other versions, re-run `make pipeline`.
 numpy==1.26.4
 pandas==3.0.5
-scipy==1.18.1
+scipy==1.17.1
 scikit-learn==1.9.1
 xgboost==3.4.1
 pyarrow==26.0.1
